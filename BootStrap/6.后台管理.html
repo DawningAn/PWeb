@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/plugins/bootstrap-3.4.1/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/plugins/fontawesome-free/css/fontawesome.css">
+    <style>
+        .navbar {
+            border-radius: 0;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">环境DNA</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">物种数据表<span class="sr-only">(current)</span></a></li>
+                <li><a href="#">Map</a></li>
+                <li><a href="#">算法</a></li>
+                <li><a href="#">可视化结果</a></li>
+
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">登录</a></li>
+                <li><a href="#">注册</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>表单区域</div>
+        <div class="panel-body">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="exampleInputPassword3">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>Save</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>数据列表区域(带表格的面板)
+        </div>
+        <!--
+        <div class="panel-body">
+        </div>
+        -->
+        <table class="table table-bordered table-striped table-hover">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Operation</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>
+                    <a class="btn-primary btn-xs">编辑</a>
+                    <a class="btn-danger btn-xs"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>
+                    <a class="btn-primary btn-xs">编辑</a>
+                    <a class="btn-danger btn-xs">删除</a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>
+                    <a class="btn-primary btn-xs">编辑</a>
+                    <a class="btn-danger btn-xs">删除</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <ul class="pagination">
+            <li>
+                <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">«</span>
+                </a>
+            </li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li>
+                <a href="#" aria-label="Next">
+                    <span aria-hidden="true">»</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+</body>
+</html>

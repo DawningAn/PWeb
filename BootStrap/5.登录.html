@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/plugins/bootstrap-3.4.1/css/bootstrap.css">
+    <style>
+        .navbar {
+            border-radius: 0;
+        }
+
+        .container {
+            width: 500px; /* 设置容器宽度 */
+            border: 1px solid #dddddd; /* 设置边框 */
+            justify-content: center; /* 水平居中 */
+            align-items: center; /* 垂直居中 */
+            border-radius: 5px;  /* 设置圆角 */
+            box-shadow:5px 5px 20px #888888; /* 设置阴影 */
+
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+            padding: 20px 40px;  /* 设置内边距 上下20 左右40 */
+        }
+
+        .container h1 {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>用户登录</h1>
+    <form>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="请输入用户名">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox"> Check me out
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary">登录</button>
+    </form>
+
+</div>
+
+
+</body>
+</html>
