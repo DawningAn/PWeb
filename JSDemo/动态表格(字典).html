@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>姓名</th>
+            <th>年龄</th>
+        </tr>
+        </thead>
+        <tbody id="body">
+
+        </tbody>
+
+    </table>
+
+<script type="text/javascript">
+    var dataList = {
+        {id:1,name:云东,age:18},
+        {id:2,name:云东,age:18},
+        {id:3,name:云东,age:18},
+        {id:4,name:云东,age:18},
+    }
+    for (var idx in dataList) {
+        var info = dataList[idx];
+        var tr = document.createElement("tr");
+        for (var key in info) {
+            var text = info[key];
+            var td = document.createElement("td");  //创建td
+            td.innerText = text;
+
+            tr.appendChild(td);
+        }
+        var bodyTag = document.getElementById("body");
+        bodyTag.appendChild(tr);
+    }
+
+
+</script>
+</body>
+</html>
