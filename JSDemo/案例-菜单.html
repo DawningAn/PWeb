@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .menus {
+            width: 200px;
+            height: 800px;
+            border: 1px solid red;
+        }
+
+        .menus .header {
+            background-color: gold;
+            padding: 10px 5px;
+            border-bottom: 1px dotted black;
+
+            cursor: pointer;  {# 鼠标移上去的时候，变成小手#}
+        }
+
+        .menus .content a {
+            display: block;
+            padding: 5px 5px;
+            border-bottom: 1px dotted black;
+        }
+
+        .hide {
+            display: none;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="menus">
+    <div class="item">
+        <div class="header" onclick="clickMe(this);">广州</div>
+        <div class="content hide">
+            <a>天河区</a>
+            <a>越秀区</a>
+            <a>南沙区</a>
+            <a>黄浦区</a>
+            <a>海珠区</a>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="header" onclick="clickMe(this);">上海</div>
+        <div class="content hide">
+            <a>普陀区</a>
+            <a>徐汇区</a>
+            <a>青浦区</a>
+            <a>浦东新区</a>
+        </div>
+    </div>
+
+    <script src="../static/js/jquery-3.7.1.min.js"></script>
+    <script>
+        function clickMe(self) {
+            var hasHide = $(self).next().hasClass("hide");   // 判断当前点击的元素 下一个元素是否包含hide样式
+            if (hasHide) {
+                $(self).next().removeClass("hide");  // 如果有则找到后删除hide
+            } else {
+                $(self).next().addClass("hide"); // 当前点击的元素 下一个元素  找到后删除hide样式即可显示
+
+            }
+        }
+    </script>
+</div>
+</body>
+</html>
